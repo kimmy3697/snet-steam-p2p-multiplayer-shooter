@@ -97,6 +97,11 @@ public class SNet_Button : MonoBehaviour
                     SNet_Network.instance.SpawnPlayer(SelectedPlayer.gameObject.name, GameMap.getSpawnPosition(), Quaternion.identity, Vector3.one);
                 }
                 break;
+            case ButtonType.Quit:
+                Application.Quit();
+                
+                //SNet_Manager.instance.
+                break;
         }
     }
 }
